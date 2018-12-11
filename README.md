@@ -1,4 +1,4 @@
-1. Run this app in a local testing server. Once the server is running, take a screenshot of your terminal window and add it to your images folder (screenshots on Mac: shift + command + 4) (screenshots in Windows: search ‘snip’ in the control panel to open the snipping tool)
+<!-- 1. Run this app in a local testing server. Once the server is running, take a screenshot of your terminal window and add it to your images folder (screenshots on Mac: shift + command + 4) (screenshots in Windows: search ‘snip’ in the control panel to open the snipping tool) -->
 
 2. Create a header that matches the header.png image and style it to look the same. You should include the logo (united-nations.png) and nav. It should be 100px tall and live inside the <header> div. Don't forget the hover states (the blue background color).
 
