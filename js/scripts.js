@@ -1,6 +1,19 @@
 $(document).ready(function() {
   console.log('Ready to begin the test...');
 
+  // hover state
+  // $( ".card_item" ).hover(
+  //   function() {
+  //     $( ".data_line2" ).css("display", "inline-block");
+  //   }
+  // );
+
+  // $( ".card_item" ).hover(function() {
+  //   $( this ).fadeOut( 100 );
+  //   $( this ).fadeIn( 500 );
+  // });
+
+
 // button click effect
   $( ".mobile-btn" ).click(function() {
       $( ".mobile_nav" ).slideToggle( "slow" );
@@ -46,11 +59,14 @@ function buildContent(data) {
   function mkDataHTML(country) {
     var origin = country.Origin;
     var value = country.Value;
-    return $("<p class='data_line1'>" + origin + "</p>" + "<p class='data_line2'>" + value + " Requests </p>");
+    return $("<div class='card_item'><p class='data_line1'>" + origin + "</p>" + "<p class='data_line2'>" + value + " Requests </p></div>");
   }
 
 
 }
+
+
+
 
 
 

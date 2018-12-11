@@ -61,6 +61,35 @@ body {
   display: none;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_item {
+  background-color: #2278cd;
+  width: 100px;
+  margin:20px;
+  padding: 0px 10px 0px 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  margin-right: 0;
+  padding-right: 0;
+
+}
+
+.data_line2 {
+  display: inline-block;
+}
+
 
 
 /* Add mobile styles here */
