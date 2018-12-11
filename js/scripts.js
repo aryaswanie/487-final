@@ -1,18 +1,6 @@
 $(document).ready(function() {
   console.log('Ready to begin the test...');
 
-  // hover state
-  // $( ".card_item" ).hover(
-  //   function() {
-  //     $( ".data_line2" ).css("display", "inline-block");
-  //   }
-  // );
-
-  // $( ".card_item" ).hover(function() {
-  //   $( this ).fadeOut( 100 );
-  //   $( this ).fadeIn( 500 );
-  // });
-
 
 // button click effect
   $( ".mobile-btn" ).click(function() {
