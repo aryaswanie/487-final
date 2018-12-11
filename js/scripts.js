@@ -17,5 +17,41 @@ $(document).ready(function() {
 
   if (student.likesCoding==true) {console.log(student.name + ', '+ student.age);}
 
+// log data
+
+$.ajax({
+  type:'GET',
+  url:'js/refugees.json',
+  success:function(data) {
+    console.log(data);
+    buildContent(data);
+  },
+  error: function(error) {
+    console.log(error);
+  },
+});
+
+function buildContent(data) {
+  console.log(data)
+  var target = $(".cards");
+  for (var i = 0; i < data.length; i ++) {
+      console.log(data[i].Origin);
+      console.log(data[i].Value);
+      var country = data[i];
+      var newHTML = mkDataHTML(country);
+      newHTML.appendTo(target);
+
+  }
+
+  function mkDataHTML(country) {
+    var origin = country.Origin;
+    var value = country.Value;
+    return $("<p class='data_line1'>" + origin + "</p>" + "<p class='data_line2'>" + value + " Requests </p>");
+  }
+
+
+}
+
+
 
 });
